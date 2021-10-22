@@ -51,4 +51,5 @@ class MovieListAdapter(val movieList: ArrayList<Movie>, var clickListener: OnIte
     interface OnItemClickListener {
         fun onItemClick(item: Movie, position: Int)
     }
+
 }

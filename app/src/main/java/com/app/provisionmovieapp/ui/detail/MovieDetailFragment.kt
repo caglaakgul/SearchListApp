@@ -53,9 +53,6 @@ class MovieDetailFragment : DaggerFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.detailViewModel = viewModel
-
-
-
     }
 
   /*  fun setKeyValue(){
@@ -70,7 +67,7 @@ class MovieDetailFragment : DaggerFragment() {
         for (i in 0 until getArray.length()) {
             val objects: JSONObject
             objects = getArray.getJSONObject(i)
-            val key = objects["name"].toString()
+            val key = objects["key"].toString()
             val value = objects["value"].toString()
             itemSizeArray.add(ItemDetailData(key = key, value = value))
         }
